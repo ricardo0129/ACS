@@ -4,7 +4,8 @@ using namespace std;
 #define vi vector<int>
 
 class DSU{
-	public:
+
+public:
 	vi size,parent;
 
 	void make_set(int u){

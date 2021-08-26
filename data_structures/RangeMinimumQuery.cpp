@@ -10,7 +10,8 @@ This implementation is not concrete and should be changed according
 to the specific problem. 
 */
 class SegmentTree{
-	public:
+
+public:
 	int n;
 	vi A, St;
 
