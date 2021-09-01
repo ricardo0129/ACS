@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
 using namespace std;
 
 #define vi vector<int>
@@ -24,3 +25,14 @@ void dfs(int u){
 	}
 }
 
+int main()
+{
+	int n,m;
+	cin>>n>>m;
+	for(int i=0;i<m;i++){
+		int u,v;
+		cin>>u>>v;
+		makeUndirectedEdge(u,v);
+	}
+	return 0;
+}
