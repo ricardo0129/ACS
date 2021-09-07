@@ -2,7 +2,9 @@
 Example problem Virtual Friends 
 https://open.kattis.com/problems/virtualfriends
 */
-#include <bits/stdc++.h>
+#include <vector>
+#include <iostream>
+#include <map>
 using namespace std;
 #define vi vector<int>
 class DSU{

@@ -32,3 +32,10 @@ public:
 		for(int i=0;i<n;i++) make_set(i);
 	}
 };
+
+int main()
+{
+	DSU dSet(50);
+
+	return 0;
+}

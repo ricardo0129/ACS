@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 #define vi vector<int>
@@ -32,3 +32,9 @@ public:
 		ft.assign(n+1,0);
 	}
 };
+
+int main()
+{
+	FenwickTree t(50);
+	return 0;
+}

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <vector>
 using namespace std;
 
 #define vi vector<int>
@@ -64,3 +64,11 @@ class SegmentTree{
 		build(0,n-1,1);
 	}
 };
+
+int main()
+{
+	vi C(12,0);
+	SegmentTree tree(C);
+
+	return 0;
+}
