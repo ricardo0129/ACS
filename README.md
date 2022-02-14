@@ -1,22 +1,23 @@
 # Algorithms Cheat Sheet
 
-This is a wide range of algorithms and techniques for ICPC regionals
+This is a wide range of algorithms and techniques for ICPC regionals  
 
 ## Graph Algorithms
--DFS, BFS
--Connected Components
--Topological Sort
--Articulation Points & Bridges
--Strongly Connected Components
--Minimum Spanning Tree
--Floyd Warshall
--Dijkstras
+-DFS, BFS  
+-Connected Components  
+-Topological Sort  
+-Articulation Points & Bridges  
+-Strongly Connected Components  
+-Minimum Spanning Tree  
+-Floyd Warshall  
+-Dijkstras  
+-Binary Lifting  
 
-## Data structures
--Segmented Tree
--Disjoint Set Union
+## Data structures  
+-Segmented Tree  
+-Disjoint Set Union 
 
-## Mathematics
+## Mathematics  
 
 ## String Algorithms
 
@@ -24,4 +25,9 @@ This is a wide range of algorithms and techniques for ICPC regionals
 
 
 ## Todo
+-Dijkstras  
+-Single Source Shortest Path Algorithms  
+-Network Flow, Edmond Karps  
+-Dinics Flow  
+
 
