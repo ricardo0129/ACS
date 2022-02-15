@@ -10,8 +10,9 @@ This is a wide range of algorithms and techniques for ICPC regionals
 -Strongly Connected Components  
 -Minimum Spanning Tree  
 -Floyd Warshall  
--Dijkstras  
+-Dijkstra
 -Binary Lifting  
+-Centroid Decomposition  
 
 ## Data structures  
 -Segmented Tree  
@@ -25,9 +26,7 @@ This is a wide range of algorithms and techniques for ICPC regionals
 
 
 ## Todo
--Dijkstras  
 -Single Source Shortest Path Algorithms  
 -Network Flow, Edmond Karps  
 -Dinics Flow  
-
-
+-Binary Lifting  
