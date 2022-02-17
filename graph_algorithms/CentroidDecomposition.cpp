@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define vi vector<int> 
+#define ll long long 
 
 const int N = (int)1e5;
 int n;
@@ -8,6 +9,10 @@ vi G[N];
 bool blocked[N];
 int parent[N];
 int subTreeSize[N];
+int val[N];
+ll sum[N];
+int bits[N][20];
+
 void calcsum(int u, int p){
     parent[u] = p;
     subTreeSize[u] = 1;
@@ -20,7 +25,14 @@ void calcsum(int u, int p){
 }
 char ans[N];
 
-void solve(int entry,char letter){
+ll solveTree(int u, int p){
+    sum[u] = 0;
+    for(int v: G[u]){
+
+    }
+}
+
+void solve(int entry){
     calcsum(entry,entry);
     int centroid = entry;
     int bestSize = subTreeSize[entry];
@@ -46,18 +58,21 @@ void solve(int entry,char letter){
     /*
     int ways = solveTree(centroid,compsize);
     */
+    cout<<1+centroid<<endl;
     blocked[centroid] = true;
-    ans[centroid] = letter;
 
     for(int v:G[centroid]){
         if(!blocked[v])
-            solve(v,letter+1);
+            solve(v);
     }
 }
 
 int main()
 {
     cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>val[i];
+    }
     for(int i=0;i<n-1;i++){
         int u,v;
         cin>>u>>v;
@@ -65,9 +80,7 @@ int main()
         G[u].push_back(v);
         G[v].push_back(u);
     }
-    solve(0,'A');
-    for(int i=0;i<n;i++) cout<<ans[i]<<" ";
-    cout<<endl;
+    solve(0);
     
     return 0;
 }
