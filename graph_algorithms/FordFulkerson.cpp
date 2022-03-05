@@ -10,10 +10,12 @@ int cap[N][N];
 bool seen[N];
 int sink,source;
 vector<string> A;
+vi G[N];
 int n,p,k;
 
 void addEdge(int u, int v, int c){
     cap[u][v]+=c;
+    G[u].push_back(v);
 }
 
 int dfs(int u, int flow){
@@ -22,7 +24,7 @@ int dfs(int u, int flow){
     }
     seen[u] = true;
     int sent = 0;
-    for(int v=0;v<=n;v++){
+    for(int v:G[u]){
         if(cap[u][v]>0 && !seen[v]){
             sent = dfs(v,min(flow,cap[u][v]));
             if(sent>0){
